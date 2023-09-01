@@ -1,6 +1,6 @@
 # MiniSeo
 
-https://mini-seo.vercel.app/
+[![Static Badge](https://img.shields.io/badge/Try_It_Now!-37a779?style=for-the-badge)](https://mini-seo.vercel.app/)
 
 Simple SEO you can quickly add to your website!
 
