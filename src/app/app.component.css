@@ -1,0 +1,24 @@
+form {
+  @apply  flex flex-col gap-4 items-center justify-center h-full pb-10 w-full;
+}
+
+input {
+  @apply outline-orange-300 accent-slate-50 focus:text-orange-400 text-orange-400;
+  @apply border rounded-md px-4 py-3 text-2xl text-center font-light placeholder:text-gray-200 flex w-full;
+}
+
+.steps {
+  @apply w-4/6;
+}
+
+button.btn {
+  @apply rounded-md px-4 py-3 w-40 text-white border text-gray-500;
+}
+
+button.btn.primary {
+  @apply rounded-md px-4 py-3 w-40 text-white bg-orange-500;
+}
+
+button.btn.disabled {
+  @apply bg-gray-300;
+}
