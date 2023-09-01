@@ -13,3 +13,11 @@ Simple SEO you can quickly add to your website!
 Give it a spin!
 
 Like the project? Give it a star and share!
+
+## Using this in your website?
+
+Feel free to add your website below!
+
+- https://zafranudin.dev/
+
+
