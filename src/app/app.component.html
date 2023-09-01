@@ -1,5 +1,6 @@
 <div class="fixed top-0 right-0 m-6 hidden md:block" *ngIf="tutoDescription">
-  <div class="border-2 border-orange-400 rounded-md h-40 w-52 flex flex-col items-center overflow-hidden bg-orange-400 ">
+  <div
+    class="border-2 border-orange-400 rounded-md h-40 w-52 flex flex-col items-center overflow-hidden bg-orange-400 ">
     <div class="w-full h-fit bg-white overflow-hidden">
       <img width="100%" height="100%" [src]="assetGif"/>
     </div>
@@ -43,13 +44,15 @@
         <input type="text" [formControl]="twitterCreator" placeholder="Your twitter @"/>
       </div>
 
-      <p class="italic text-gray-400" [class]="tips ? 'block' : 'invisible'"><small>Hint: {{ 'Provide full screen crop if possible' }}</small></p>
+      <p class="italic text-gray-400" [class]="tips ? 'block' : 'invisible'">
+        <small>Hint: {{ 'Provide full screen crop if possible' }}</small></p>
 
       <div class="flex gap-2">
         <button (click)="back()" type="button" class="btn" *ngIf="steps < 7 && steps > 0">
           Back
         </button>
-        <button (click)="next()" type="button" class="btn primary" [class]="disabledClass" *ngIf="steps < 7; else done" [disabled]="disabled">
+        <button (click)="next()" type="button" class="btn primary" [class]="disabledClass" *ngIf="steps < 7; else done"
+                [disabled]="disabled">
           Next
         </button>
       </div>
@@ -66,7 +69,8 @@
     <div class="h-2 bg-orange-400 transition-width transition-slowest ease" [style]="{ width: stepperWidth()}"></div>
   </div>
 
-  <button class="text-blue-500 my-4 hover:text-orange-400" (click)="preview()">See in action? Will overwrite your form</button>
+  <button class="text-blue-500 my-4 hover:text-orange-400" (click)="preview()">See in action? Will overwrite your form
+  </button>
 
 
   <app-meta [metas]="{
@@ -85,8 +89,22 @@
 
     }"/>
 
-  <div class="flex flex-col grow">
-    <p class="text-gray-400">Made with ♥ from <a href="https://zafranudin.dev/" target="_blank" class="text-orange-400">Zafranudin Zafrin</a></p>
+  <div class="flex flex-col grow items-center justify-center gap-2 my-10">
+    <a href="https://github.com/Xavier-IV/mini-seo" target="_blank">
+      <div class="w-5">
+        <img src="/assets/images/github-mark.svg" class="fill-slate-200" alt="">
+      </div>
+    </a>
+    <p class="text-gray-300">Made by <a href="https://zafranudin.dev/" target="_blank" class="text-orange-300">Zafranudin
+      Zafrin</a></p>
+
+    <div class="flex gap-1">
+      <a class="github-button" href="https://github.com/Xavier-IV/mini-seo" data-icon="octicon-star"
+         data-show-count="true" aria-label="Star Xavier-IV/mini-seo on GitHub">Star</a>
+      <!-- Place this tag where you want the button to render. -->
+      <a class="github-button" href="https://github.com/Xavier-IV" data-show-count="true"
+         aria-label="Follow @Xavier-IV on GitHub">Follow @Xavier-IV</a>
+    </div>
   </div>
 </div>
 

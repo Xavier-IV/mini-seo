@@ -32,10 +32,6 @@ export class MetaComponent {
   constructor(private clipboard: Clipboard) {
   }
 
-  ngAfterViewInit() {
-    console.log(this.generated);
-  }
-
   copy(){
     if (!this.generated?.nativeElement.innerText) return;
     this.clipboard.copy(this.generated?.nativeElement.innerText.toString())
