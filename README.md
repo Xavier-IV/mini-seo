@@ -14,6 +14,8 @@ Give it a spin!
 
 Like the project? Give it a star and share!
 
+Made with Angular 16!
+
 ## Using this in your website?
 
 Feel free to add your website below!
